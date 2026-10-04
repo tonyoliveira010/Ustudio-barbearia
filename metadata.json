@@ -1,0 +1,6 @@
+{
+  "name": "studiolite",
+  "description": "Plataforma profissional de gestão, agenda inteligente, catálogo de serviços, confirmação via WhatsApp e pagamentos para estúdios.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

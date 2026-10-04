@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  --canvas: #000000;
+  --canvas-soft: #161616;
+  --field: #1e1e1e;
+  --raised: #262626;
+  --hairline-soft: rgba(255, 255, 255, 0.08);
+  --hairline: rgba(255, 255, 255, 0.16);
+
+  --ink: #fafafa;
+  --ink-soft: #d6d6d6;
+  --muted: rgba(255, 255, 255, 0.55);
+  --faint: rgba(255, 255, 255, 0.32);
+
+  --cta-fill: #fafafa;
+  --cta-text: #0a0a0a;
+
+  --accent: #2f7dff;
+  --vip: #ffb020;
+
+  --grad-a: #ff5f8a;
+  --grad-b: #ef1f4d;
+  --grad-c: #8f0d24;
+
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #050505;
+  color: var(--ink);
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Hide scrollbar for clean horizontal scrolls */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom interactive animation transitions */
+.smooth-hover {
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, transform 0.1s ease;
+}
+.smooth-hover:active {
+  transform: scale(0.98);
+}
